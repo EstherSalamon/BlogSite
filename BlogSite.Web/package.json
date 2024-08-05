@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "query-string": "^9.1.0",
+    "react-bootstrap-icons": "^1.11.4"
+  }
+}
