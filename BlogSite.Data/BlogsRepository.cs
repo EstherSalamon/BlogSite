@@ -40,8 +40,7 @@ namespace BlogSite.Data
             using var context = new BlogsDataContext(_connection);
             context.Blogs.Add(b);
             context.SaveChanges();
-            int id = context.Database.ExecuteSqlInterpolated($"INSERT INTO Blogs VALUES {b.Title}, {b.Content}, {b.DatePosted} SELECT SCOPE_IDENTITY()");
-            return id;
+            return b.Id;
         }
 
         public Blog GetById(int id)
